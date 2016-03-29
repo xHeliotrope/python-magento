@@ -9,9 +9,11 @@
     :license: AGPLv3, see LICENSE for more details
 '''
 
+import sys
+
 PROTOCOLS = []
 try:
-    from xmlrpclib import ServerProxy
+    from xmlrpc.client import ServerProxy
 except ImportError:
     pass
 else:
