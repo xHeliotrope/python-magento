@@ -12,7 +12,7 @@
 import os
 from setuptools import setup
 
-exec(open(os.path.join('magento', 'version.py')).read())
+exec(open(os.path.join('magento', 'version.py')).decode('utf8').read())
 
 setup(
     name = 'magento',
